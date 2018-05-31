@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GiveParent_method2 : MonoBehaviour {
 
 	//public GameObject prefab;
-	public bool isPlanting = false;
+	private bool isPlanting = false;
 	public GameObject player;
 	public Transform player_transform;
 	public Text grass_Text;
@@ -19,6 +19,8 @@ public class GiveParent_method2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		string thisName = gameObject.name.ToString ();
+		//grass_Text = GameObject.Find ("Cube01/Canvas/grass_Text");
+		//grass_Text = gameObject.transform.GetChild(0).gameObject;
 	}
 
 	// Update is called once per frame
